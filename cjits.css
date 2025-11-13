@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f8fb;
+}
+
+.header-container {
+    background: #f2f2f2;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    padding: 0 32px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    padding: 24px 0 8px 0;
+}
+
+.college-logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    margin-right: 22px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+}
+
+.college-name h1 {
+    color: #a22429;
+    margin: 0 0 8px 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.affiliation {
+    color: #3366cc;
+    font-size: 1em;
+    margin: 0;
+}
+
+.navbar {
+    background: #35618b;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 12px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 12px;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #274a6e;
+    border-radius: 6px;
+}
+
+/* Content section styles */
+.content-section {
+    display: none;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px 16px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border-radius: 6px;
+}
+
+.content-section.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .logo-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+    .navbar li {
+        margin: 6px 0;
+    }
+}
